@@ -8,8 +8,8 @@ class Demo {
 
   async review() {
     try{
-    // await this.page.goto('https://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');  
-    await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+    await this.page.goto('https://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');  
+    // await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
     await this.page.getByRole('link', { name: 'Reviews', exact: true }).click();
     await this.page.getByRole('button', { name: 'Create New Cycle' }).click();
     await this.page.getByRole('button', { name: 'Create Performance Review' }).click();
@@ -91,13 +91,13 @@ class Demo {
     await this.page.getByRole('button', { name: 'Save & Continue' }).click();
     await this.page.getByRole('button', { name: 'Save & Continue' }).click();
     await this.page.waitForTimeout(1000);
-    // await this.page.getByRole('textbox', { name: 'Type to search' }).first().fill('Maverick Rumsey');
-    await this.page.getByRole('textbox', { name: 'Type to search' }).nth(1).fill('Steve Jobs');
+    await this.page.getByRole('textbox', { name: 'Type to search' }).first().fill('Maverick Rumsey');
+    // await this.page.getByRole('textbox', { name: 'Type to search' }).nth(1).fill('Steve Jobs');
     await this.page.waitForTimeout(1000);
     // ==================================demo=========================//
-    // await this.page.getByRole('button', { name: 'plus' }).click();
+    await this.page.getByRole('button', { name: 'plus' }).click();
     //=======================staging==================================//
-    await this.page.locator('div:nth-child(7) > .grid-row > .add-button-wrapper > div > .ant-btn').click();
+    // await this.page.locator('div:nth-child(7) > .grid-row > .add-button-wrapper > div > .ant-btn').click();
     await this.page.getByRole('button', { name: 'Save & Continue' }).click();
     await this.page.getByRole('button', { name: 'Save & Continue' }).click();
     await this.page.getByRole('button', { name: 'Create Review Cycle' }).click();
@@ -110,8 +110,8 @@ class Demo {
   }
   async selfrevlaunch(){
     try{
-    // await this.page.goto('https://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');  
-    await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+    await this.page.goto('https://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');  
+    // await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
     await this.page.getByRole('link', { name: 'Reviews', exact: true }).click();
     await this.page.waitForTimeout(1000);
     await this.page.getByRole('textbox', { name: 'Search for a Review Cycle' }).fill('Test ReviewQA2');
@@ -134,8 +134,8 @@ class Demo {
 
   async siftuser(){
     try{
-    // await this.page.goto('https://api.demo.peoplebox.ai/demo/switch?email=maverick1147692196@example.net');
-    await this.page.goto('https://api.staging.peoplebox.ai/demo/switch?email=punch@tata.coom');
+    await this.page.goto('https://api.demo.peoplebox.ai/demo/switch?email=maverick1147692196@example.net');
+    // await this.page.goto('https://api.staging.peoplebox.ai/demo/switch?email=punch@tata.coom');
     await this.page.waitForTimeout(2000);
     await this.page.getByRole('link', { name: 'Write Self Review' }).first().click();
     await this.page.getByRole('button', { name: '1 Unsatisfactory' }).click();
@@ -155,8 +155,8 @@ class Demo {
 
   async mgrrvwlaunch(){
     try{
-    // await this.page.goto('https://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
-    await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+    await this.page.goto('https://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+    // await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
     await this.page.getByRole('link', { name: 'Reviews', exact: true }).click();
     await this.page.getByRole('textbox', { name: 'Search for a Review Cycle' }).fill('Test ReviewQA2');
     await this.page.getByRole('button', { name: 'Open' }).first().click();    
@@ -164,8 +164,8 @@ class Demo {
     await this.page.locator('div').filter({ hasText: /^Silent Launch$/ }).nth(2).click();
     await this.page.locator('div').filter({ hasText: /^Instant Launch$/ }).nth(1).click();
     await this.page.getByText('Recipients', { exact: true }).click();
-    // await this.page.getByText('Jony Ive').click();
-    await this.page.getByText('Rafeal').click();
+    await this.page.getByText('Jony Ive').click();
+    // await this.page.getByText('Rafeal').click();
     await this.page.locator('button.ant-btn.primaryButton >> text=Launch').click();
     await this.page.waitForTimeout(2000);
     await this.page.getByText('Yes').click();
@@ -180,8 +180,8 @@ class Demo {
   
   async managerreview(){
     try{
-    // await this.page.goto('https://api.demo.peoplebox.ai/demo/switch?email=jony1147278870@example.net');
-    await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+    await this.page.goto('https://api.demo.peoplebox.ai/demo/switch?email=jony1147278870@example.net');
+    // await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
     await this.page.waitForTimeout(1000);
     await this.page.getByRole('link', { name: 'Write Reviews' }).first().click();
     await this.page.waitForTimeout(1000);
@@ -207,8 +207,8 @@ class Demo {
   }
   async releaseReview(){
     try{
-    // await this.page.goto('https://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
-    await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+    await this.page.goto('https://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+    // await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
     await this.page.getByRole('link', { name: 'Reviews', exact: true }).click();
     await this.page.getByRole('textbox', { name: 'Search for a Review Cycle' }).fill('Test ReviewQA2');
     await this.page.getByRole('button', { name: 'Open' }).first().click();    
@@ -216,8 +216,8 @@ class Demo {
     await this.page.locator('div').filter({ hasText: /^Silent Launch$/ }).nth(2).click();
     await this.page.locator('div').filter({ hasText: /^Instant Launch$/ }).nth(1).click();
     await this.page.getByText('Recipients', { exact: true }).click();
-    // await this.page.getByText('Maverick Rumsey').click();
-    await this.page.getByText('Steve Jobs').click();
+    await this.page.getByText('Maverick Rumsey').click();
+    // await this.page.getByText('Steve Jobs').click();
     await this.page.waitForTimeout(1000);
     await this.page.locator('button.ant-btn.primaryButton').filter({ hasText: 'Launch' }).click();
     await this.page.getByRole('textbox', { name: 'RELEASE REVIEW' }).fill('RELEASE REVIEW');
@@ -231,8 +231,8 @@ class Demo {
   }
   async verifyreview(){
     try{
-      // await this.page.goto('http://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
-      await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+      await this.page.goto('http://api.demo.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
+      // await this.page.goto('http://api.staging.peoplebox.ai/demo/try_interactive_demo?account_id=1147');
       await this.page.getByRole('link', { name: 'View Reviews' }).first().click();
       await this.page.getByText('Calibration View', { exact: true }).click();
       await this.page.getByText('Write Review').click();
