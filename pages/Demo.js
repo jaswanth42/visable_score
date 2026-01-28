@@ -39,25 +39,25 @@ class Demo {
     await this.page.getByRole('button', { name: 'Add Question Block' }).click();
     console.log('Verify question behavior when score visibility is disabled');  
         //========== For DEMO SERVER======================//
-    // await this.page.getByRole('button', { name: 'Create Another Block' }).click();
-    // await this.page.getByRole('menuitem', { name: 'Weighted Score' }).click();
-    // await this.page.getByLabel('', { exact: true }).nth(1).check();
-    // await this.page.locator('div').filter({ hasText: /^Section$/ }).nth(1).click();
-    // await this.page.locator('.ant-select-item').click();
-    // await this.page.getByRole('button', { name: 'Add Weighted Score Block' }).click();
+    await this.page.getByRole('button', { name: 'Create Another Block' }).click();
+    await this.page.getByRole('menuitem', { name: 'Weighted Score' }).click();
+    await this.page.getByLabel('', { exact: true }).nth(1).check();
+    await this.page.locator('div').filter({ hasText: /^Section$/ }).nth(1).click();
+    await this.page.locator('.ant-select-item').click();
+    await this.page.getByRole('button', { name: 'Add Weighted Score Block' }).click();
   //==================================== For staging Server======================//
-  await this.page.getByRole('button', { name: 'Create Another Block' }).click();
-  await this.page.getByRole('menuitem', { name: 'Weighted Score' }).click();
-  await this.page.getByLabel('', { exact: true }).nth(1).check();
-  await this.page.locator('div').filter({ hasText: /^Section$/ }).nth(1).click();
-  await this.page.locator('div').filter({ hasText: /^competency$/ }).nth(1).click();
-  await this.page.getByRole('button', { name: 'Add Weighted Score Block' }).click();
-  await this.page.getByRole('button', { name: 'Create Another Block' }).click();
-  await this.page.getByRole('menuitem', { name: 'Weighted Score' }).click();
-  await this.page.getByLabel('', { exact: true }).nth(1).check();
-  await this.page.locator('div').filter({ hasText: /^Section$/ }).nth(1).click();
-  await this.page.locator('div').filter({ hasText: /^Driving Performance$/ }).nth(5).click();
-  await this.page.getByRole('button', { name: 'Add Weighted Score Block' }).click();        
+  // await this.page.getByRole('button', { name: 'Create Another Block' }).click();
+  // await this.page.getByRole('menuitem', { name: 'Weighted Score' }).click();
+  // await this.page.getByLabel('', { exact: true }).nth(1).check();
+  // await this.page.locator('div').filter({ hasText: /^Section$/ }).nth(1).click();
+  // await this.page.locator('div').filter({ hasText: /^competency$/ }).nth(1).click();
+  // await this.page.getByRole('button', { name: 'Add Weighted Score Block' }).click();
+  // await this.page.getByRole('button', { name: 'Create Another Block' }).click();
+  // await this.page.getByRole('menuitem', { name: 'Weighted Score' }).click();
+  // await this.page.getByLabel('', { exact: true }).nth(1).check();
+  // await this.page.locator('div').filter({ hasText: /^Section$/ }).nth(1).click();
+  // await this.page.locator('div').filter({ hasText: /^Driving Performance$/ }).nth(5).click();
+  // await this.page.getByRole('button', { name: 'Add Weighted Score Block' }).click();        
 //========================================//==========================================
     await this.page.getByRole('button', { name: 'Save & Continue' }).click();
     await this.page.getByRole('button', { name: 'Create Form' }).click();
