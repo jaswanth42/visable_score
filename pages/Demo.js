@@ -20,8 +20,8 @@ class Demo {
     await this.page.getByRole('button', { name: 'Save & Continue' }).click();
     await this.page.getByRole('button', { name: 'Create Form' }).first().click();
     await this.page.getByRole('button', { name: 'Create From Scratch' }).click();
-    await this.page.waitForTimeout(1000);
     await this.page.getByRole('button', { name: 'Create New Block' }).click();
+    await this.page.waitForTimeout(1000);
     await this.page.getByRole('menuitem', { name: 'Question' }).click();
     await this.page.getByRole('textbox', { name: 'QUESTION' }).fill('Demo');
     await this.page.locator('label:nth-child(3) > .ant-radio-button').click();
